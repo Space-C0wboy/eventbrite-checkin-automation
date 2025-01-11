@@ -20,7 +20,7 @@ Automates the attendee check-in process for Eventbrite events using Python and S
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/eventbrite-checkin-automation.git
+   git clone https://github.com/Space-C0wboy/eventbrite-checkin-automation.git
    cd eventbrite-checkin-automation
    ```
 
@@ -66,5 +66,3 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 ## License
 
 This project is licensed under the MIT License.
-
-Replace `https://github.com/yourusername/eventbrite-checkin-automation.git` with your actual GitHub repository URL.
