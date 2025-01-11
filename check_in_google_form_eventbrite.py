@@ -117,10 +117,14 @@ def main():
     attendees = attendees_df["Email"].tolist()
     print(Fore.CYAN + f"Loaded {len(attendees)} attendees from {args.attendees_csv}.")
 
-    # Set up the WebDriver
+    # Set up the WebDriver with headless mode as default
     service = Service(ChromeDriverManager().install())
     options = webdriver.ChromeOptions()
-    #options.add_argument("--start-maximized")  # Maximize window for visibility
+    options.add_argument("--start-maximized")  # Maximize window for visibility
+    options.add_argument("--headless=new")  # Enable headless mode by default
+    options.add_argument("--disable-gpu")  # Disable GPU acceleration
+    options.add_argument("--no-sandbox")  # Required for some environments
+    options.add_argument("--disable-dev-shm-usage")  # Prevent shared memory issues
     driver = webdriver.Chrome(service=service, options=options)
 
     try:
