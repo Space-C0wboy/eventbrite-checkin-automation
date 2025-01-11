@@ -120,7 +120,7 @@ def main():
     # Set up the WebDriver
     service = Service(ChromeDriverManager().install())
     options = webdriver.ChromeOptions()
-    options.add_argument("--start-maximized")  # Maximize window for visibility
+    #options.add_argument("--start-maximized")  # Maximize window for visibility
     driver = webdriver.Chrome(service=service, options=options)
 
     try:
